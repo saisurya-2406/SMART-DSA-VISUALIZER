@@ -27,8 +27,8 @@ git remote add origin <your-github-repo-url>
 git push -u origin main
 ```
 
-2. On Render: create a new Web Service, connect the repo, then set:
-- Build command: `pip install -r requirements.txt && python manage.py collectstatic --noinput`
+- 2. On Render: create a new Web Service, connect the repo, then set:
+- Build command: `python -m pip install --upgrade pip setuptools wheel && pip install -r requirements.txt && python manage.py collectstatic --noinput`
 - Start command: `gunicorn dsa_project.wsgi --log-file -`
 
 3. Configure environment variables in the Render dashboard (do NOT commit secrets):
