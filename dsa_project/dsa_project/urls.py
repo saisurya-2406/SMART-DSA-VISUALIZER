@@ -18,7 +18,6 @@ urlpatterns = [
     path('hashtable/', views.hashtable),
     path('kruskal/', views.kruskal),
     path('bellmanford/', views.bellmanford),
-    path('login/', views.login),
     path('insertion/', views.insertion),
     path('linear/', views.linear),
 ]
