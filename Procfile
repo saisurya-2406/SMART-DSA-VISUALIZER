@@ -1,1 +1,1 @@
-web: gunicorn dsa_project.wsgi --log-file -
+web: gunicorn dsa_project.wsgi:application
